@@ -1,0 +1,104 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    min-height: 100vh;
+}
+.nav-bar__container{
+    background: black;;
+}
+.nav-bar__container--ul{
+    display: flex;
+    list-style: none;
+    
+    justify-content: space-between;
+    padding: 30px 450px;
+}
+
+.nav-bar__container--ul > a{
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    border: 3px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.main-content__container{
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.main-content__container--score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content__container--score > h3 {
+    color: white;
+    margin: 1.5rem;
+}
+.main-content__container--scoreboard{
+    display: flex;
+    justify-content: center;
+}
+.main-content__container--score-right,
+.main-content__container--score-left{
+    border: 3px solid white;
+    padding: 1rem 2rem;
+    width: 7rem;
+    height: 5rem;
+}
+.main-content__container--score-left{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.main-content__container--score-right{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.main-content__container--arena{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.main-content__container--arena-left,
+.main-content__container--arena-right{
+    border: 3px solid white;
+    width: 20rem;
+    height: 15rem;
+}
+.main-content__container--arena-left{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.main-content__container--arena-right{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.main-content__container--btns{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 150px;
+    height: 160px;
+    border: 2px solid white;
+    border-radius: 10%;
+    margin: 0px 20px;;
+}
+.footer__container{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
