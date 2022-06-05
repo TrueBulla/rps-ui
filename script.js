@@ -79,7 +79,7 @@ function compareSelection() {
             computerScoreboard.textContent = computerScore += 1;
         }
         if(playerScore == 5){
-            gameText.textContent = "Player wins the game! Please refresh the page to play again!"
+            gameText.textContent = "Player wins the game! Press the play button or refresh to play again!"
             endGame();
         }else if(computerScore == 5){
             gameText.textContent = "Computer wins the game! Press the play button or refresh to play again!"

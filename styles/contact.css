@@ -1,0 +1,210 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+.contactWindow{
+    width: 100vw;
+    height: auto;
+}
+.returnToGame{
+    position: absolute; 
+    color: white; 
+    border: 2px solid white;
+    font-size: 20px;
+    z-index: 100;
+    top: 25px;
+    left: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 200ms ease-in-out;
+}
+.returnToGame:hover{
+    transform: scale(1.05);
+}
+.returnToGame a {
+    text-decoration: none;
+    color: inherit;
+}
+.contactPopup{
+    position: absolute;
+    animation: 300ms ease-in 0s 1 scaleUp;
+    z-index: 100;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    transform-origin: 0%;
+    background-color: #1a1a1a;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.contactPopup > ul {
+    color: white;
+    margin: 10px;
+    list-style: none;
+}
+.contactPopup li {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.contactPopup li > a {
+    color: inherit;
+    text-decoration: none;
+}
+.contactBody{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: auto;
+    height: 100vh;
+    filter: blur(5px);
+    animation: 300ms ease-in 0s 1 blurIn;
+}
+.nav-bar__container{
+    background: black;;
+}
+.nav-bar__container--ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 30px 450px;
+}
+
+.nav-bar__container--ul > a{
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    border: 3px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.main-content__container{
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main-content__container--score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content__container--score > h3 {
+    color: white;
+    margin: 1.5rem;
+}
+.main-content__container--scoreboard{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content__container--scoreboard-right,
+.main-content__container--scoreboard-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    padding: 1rem 2rem;
+    width: 7rem;
+    height: 5rem;
+    font-size: 32px;
+    color: white
+
+}
+
+.main-content__container--scoreboard-left{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.main-content__container--scoreboard-right{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.main-content__container--arena{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.main-content__container--arena-left,
+.main-content__container--arena-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    width: 20rem;
+    height: 15rem;
+}
+.main-content__container--arena-left{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    
+}
+.main-content__container--arena-left img {
+    display: none;
+}
+.main-content__container--arena-left .active{
+    display: flex;
+    flex: 1;
+    margin: 3rem;
+}
+.main-content__container--arena-right{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.main-content__container--arena-right img {
+    display: none;
+}
+.main-content__container--arena-right .active{
+    display: flex;
+    flex: 1;
+    margin: 3rem;
+}
+.gameText{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: white;
+}
+.main-content__container--btns{
+    display: flex;
+    justify-content: center;
+}
+.main-content__container--btns img{
+    width: 150px;
+    height: 160px;
+    border: 2px solid white;
+    border-radius: 10%;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+.main-content__container--btns img:hover{
+    transform: scale(1.1);
+ 
+}
+.footer__container{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes blurIn {
+    0% {
+        filter: blur(0);
+    }
+}

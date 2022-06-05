@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="contactWindow">
+        <div class="returnToGame">
+            <a href="index.html">Back to the Game</a>
+        </div>
+        <div class="contactPopup">
+            <ul>
+                <li><a href="https://github.com/TrueBulla" target="_blank">Check out my Github!</a></li>
+                <li><a href="mailto:schoof.matt@gmail.com">Send me an email!</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contactBody">
+        <div class="nav-bar__container">
+            <ul class="nav-bar__container--ul">
+                <a href="index.html"><li>Play</li></a>
+                <a href="contact.html"><li>Contact Me</li></a>
+            </ul>
+        </div>
+        <div class="main-content__container">
+            <div class="main-content__container--score">
+                <h3>Score</h3>
+                <div class="main-content__container--scoreboard">
+                    <div class="main-content__container--scoreboard-left">0</div>
+                    <div class="main-content__container--scoreboard-right">0</div>
+                </div>
+            </div>
+            <div class="main-content__container--arena">
+                <div class="main-content__container--arena-left">
+                    <img src="assets/rock.png" class="rockArenaLeft playerSelection arenaChoice"> 
+                    <img src="assets/paper.png" class="paperArenaLeft playerSelection arenaChoice">
+                    <img src="assets/scissors.png" class="scissorsArenaLeft playerSelection arenaChoice">
+                    
+                </div>
+                <div class="main-content__container--arena-right">
+                    <img src="assets/rock.png" class="computerSelection arenaChoice"> 
+                    <img src="assets/paper.png" class="computerSelection arenaChoice">
+                    <img src="assets/scissors.png" class="computerSelection arenaChoice">
+                </div>
+            </div>
+            <div class="gameText">
+                <p>Welcome to my game! Make a choice below.</p>
+            </div>
+            <div class="main-content__container--btns">
+                <img src="assets/rock.png" class="rockEvent"> 
+                <img src="assets/paper.png" class="paperEvent">
+                <img src="assets/scissors.png" class="scissorsEvent">
+            </div>
+        </div>
+        <div class="footer__container">
+            <p>This project was made by TrueBulla for The Odin Project</p>
+        </div>
+    </div>
+</body>
+</html>
