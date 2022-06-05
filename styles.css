@@ -6,9 +6,9 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: space-between;
     width: auto;
-    min-height: 100vh;
+    height: 100vh;
 }
 .nav-bar__container{
     background: black;;
@@ -16,7 +16,6 @@ body{
 .nav-bar__container--ul{
     display: flex;
     list-style: none;
-    
     justify-content: space-between;
     padding: 30px 450px;
 }
@@ -35,7 +34,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    
 }
 .main-content__container--score{
     display: flex;
@@ -50,18 +48,25 @@ body{
     display: flex;
     justify-content: center;
 }
-.main-content__container--score-right,
-.main-content__container--score-left{
+
+.main-content__container--scoreboard-right,
+.main-content__container--scoreboard-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px solid white;
     padding: 1rem 2rem;
     width: 7rem;
     height: 5rem;
+    font-size: 32px;
+    color: white
+
 }
-.main-content__container--score-left{
+.main-content__container--scoreboard-left{
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
 }
-.main-content__container--score-right{
+.main-content__container--scoreboard-right{
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
 }
@@ -72,6 +77,9 @@ body{
 }
 .main-content__container--arena-left,
 .main-content__container--arena-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 3px solid white;
     width: 20rem;
     height: 15rem;
@@ -79,21 +87,46 @@ body{
 .main-content__container--arena-left{
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
+    
+}
+.main-content__container--arena-left img {
+    display: none;
+}
+.main-content__container--arena-left .active{
+    display: flex;
+    flex: 1;
+    margin: 3rem;
 }
 .main-content__container--arena-right{
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
 }
+.main-content__container--arena-right img {
+    display: none;
+}
+.main-content__container--arena-right .active{
+    display: flex;
+    flex: 1;
+    margin: 3rem;
+}
+.gameText{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: white;
+}
 .main-content__container--btns{
     display: flex;
     justify-content: center;
 }
-img{
+.main-content__container--btns img{
     width: 150px;
     height: 160px;
     border: 2px solid white;
     border-radius: 10%;
-    margin: 0px 20px;;
+    margin: 0px 20px;
+    cursor: pointer;
 }
 .footer__container{
     background-color: black;
